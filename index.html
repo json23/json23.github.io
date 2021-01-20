@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
+ <script type="text/javascript">
+   
+	var url2 = location.search;
+   
+  //get bid from the current URL
+	var param_bid = String(url2).match(/bid=(.*?)\&/);
+   var bid = param_bid[1];
+ 
+	//get gid from the current URL  
+	var param_gid = String(url2).match(/gid=(.*?)$/);
+   console.log(param_gid);
+	var gid = param_gid[1];	
+   
+	//store bid and gid in cookies
+	document.cookie = "icn_bid="+bid;
+	document.cookie = "icn_gid="+gid;
+	
+</script>
+
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages. Json23</p>
 </body>
