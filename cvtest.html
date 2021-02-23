@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+<title>【NativeCamp.】會員登錄成功</title>
+</head>
+<body>
+<script>
+var _CIDN = "cid";
+var _PMTV = "pmtv_test";
+var _ARGS = 12345678;
+var _TRKU = "https://s2.aspservice.jp/harch/track.php?p=" + _PMTV + "&t=6029cc46&args=" + _ARGS;
+var _cks = document.cookie.split("; ");
+var _cidv = "cid_test";
+if(_cidv){ _TRKU += "&" + _CIDN + "=" + _cidv; }
+
+documen.write(_TRKU);
+
+</script>
+
+
+
+</body>
+</html>

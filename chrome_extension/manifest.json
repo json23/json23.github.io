@@ -1,0 +1,11 @@
+{
+  "name": "JP_Language_checker",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "日本語のコンテンツがあるかどうか調べる",
+  "content_scripts": [{
+    "matches": ["https://nativecamp.net/*"],
+    "js": [
+      "jpchecker.js"
+    ]
+  }]
