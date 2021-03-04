@@ -10,15 +10,18 @@
 <!-- Naver AD用 -->
 	var param = location.search;
 	console.log(param);
-	var param_match = String(param).match(/NaPm=(.*?)\&/)
-	var decodeParam = param_match[1];
 	
-	if(decodeParam){
+	var param_match = String(param).match(/NaPm=(.*?)/)
+	var decodeParam = NULL;
+	decodeParam = param_match[1];
 	
-	encodeParam = encodeURI(decodeParam);
-	
-	console.log(encodeParam);
+	if(!decodeParam){
+		var encodeParam = encodeURI(decodeParam);
+		console.log(encodeParam);
 		
+		var newURI = "NaPm"+encodeParam;
+		console.log(newURI);
+
 	}
 	
 </script> 
